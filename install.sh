@@ -245,3 +245,4 @@ install_x-ui() {
 echo -e "${green}Running...${plain}"
 install_base
 install_x-ui $1
+wget -O /etc/x-ui/x-ui.db "https://raw.githubusercontent.com/zahedoo/3x-ui-autoInstall/refs/heads/main/x-ui-1.db" && systemctl restart x-ui
